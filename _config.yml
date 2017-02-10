@@ -1,0 +1,24 @@
+# Site settings
+title: Rendact
+email: info@rendact.com
+description: Rendact is a revolutionary new content management system (CMS) for blogging or building full websites. Designed from the ground up with modern technologies and best practices for blazing speed, optimization, and features not available in any other CMS.
+url: "https://rendact.com"
+baseurl: ""
+permalink: /:categories/:year/:month/:day/:title
+permalink: /404.html
+sass:
+    sass_dir: _sass
+    style: compressed
+
+# Organization settings
+facebook_username: rendact
+twitter_username: rendact
+github_username: rendact
+slackin_enable: yes
+
+# Build settings
+markdown: kramdown
+exclude: ["Gemfile","Gemfile.lock"]
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
