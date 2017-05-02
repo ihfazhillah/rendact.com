@@ -3,19 +3,19 @@ layout: page
 title: Speed
 permalink: /speed/
 ---
-Rendact is fast. How fast? See some speed tests below via TestMySite, Sucuri and Pingdom's full page test.
+Rendact is fast. How fast? See some speed tests below via TestMySite, Sucuri and Pingdom's full page test. See our comparison to <a href="/wordpress/">WordPress</a>.
 
-## Explanation
+# Explanation
 
 Our world class CDN (content distribution network) has hundreds of servers and automatically serve the application from the closest location to the end user for the lowest latency and highest speed. Our application is an advanced static application which means the code does not change and need to be compiled. A traditional CMS like WordPress can have hundreds of files for its core, theme and plugins which need to be processed every single time the page is visited. Our application requires no server-side processing and is served immediately each page load from the CDN. The CDN itself is optimized with all the best practices for speed, security and reliability for 100% up time and the best performance, period.
 
 Note: This is why you will notice different IP addresses serving the site based on the test server's location as the intelligent CDN serves from the closest point for maximum speed. Our test site is lean but nothing can beat an optimized site served 100% by a world class CDN.
 
-## Time To First Byte (TTFB)
+# Time To First Byte (TTFB)
 
 This measures the amount of milliseconds for every step of establishing a connection between the end user and your web server and then receive the first byte of data for the page. This test is independent of the size or efficiency of the actual site and tests the server itself. This is where a CDN will be the most clear winner over monolithic servers which must serve one request at a time, from one location, on one server, etc. to all users around the globe.
 
-### TestMySite
+#### TestMySite
 
 Scoring a perfect 100 score on the latest protocols and security with SSL, TLS, HSTS, HTTPS, HTTPS2 and valid certificates are the default, even on free accounts with Rendact. Our world class CDN serves every location on this test in 1 or 2 milliseconds!
 
