@@ -5,7 +5,7 @@ permalink: /wordpress/
 ---
 Rendact is fast. How fast? Compare a basic free setup of Rendact vs. WordPress.com's site which uses expensive servers with every optimization technique available, which can cost thousands of dollars per month for managed hosting and premium caching plugins. So in this test a free site will outperform one running on a platform that charges $25,000 and more per site with every optimization. (See: WordPress.com's managed hosting plans and prices <a href="https://vip.wordpress.com/our-services/#hosting">here</a>)
 
-Rendact was up to 23x faster.  Rendact, with our free setup available to all, was a clear winner in speed with the lowest time of 168ms with less than .3 variation between global servers. WordPress, with a setup worth thousands per month, lost by a great margin with a variation of almost 3 seconds.
+Rendact was up to 23x faster.  Rendact, with our free setup available to all, was a clear winner in speed with the lowest time of 168ms with less than .3 variation between global servers. WordPress, with a setup worth thousands per month, lost by a great margin with a variation of almost 3 seconds.  Even when we setup a "sloppy" page with large images and a much larger page size, Rendact beat any time from WordPress and was up to 5x faster with a larger site using no optimizations and a purposely bad speed score.
 
 # Explanation
 
