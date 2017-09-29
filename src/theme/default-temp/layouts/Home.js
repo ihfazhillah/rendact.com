@@ -4,9 +4,6 @@ import Sidebar from '../includes/Sidebar'
 import Footer from '../includes/Footer'
 import _ from 'lodash'
 import moment from 'moment';
-import '../css/main.min.css'
-import '../css/style.css'
-import 'font-awesome/css/font-awesome.min.css'
 
 const HomeContentWithLatestPost = (props) => (
 <div>
@@ -55,14 +52,20 @@ const HomeContentWithPage = (props) => (
 const Home = React.createClass({
 	render: function() {
 		return (
-			<div id="page-wrapper" className="application">
+			<div className="application">
 				<Header {...this.props} />	   
+				<div className="container">
+					<div className={this.props.theConfig.frontPage === "latestPost"? "col-md-8 new-section": "col-md-8"}>
 						     {
                    this.props.theConfig.frontPage === 'latestPost' ? 
                      <HomeContentWithLatestPost {...this.props}/>
                      :
                      <HomeContentWithPage {...this.props}/>
 						     }
+					</div>	
+					<Sidebar {...this.props} />
+				  <div className="clearfix"></div>
+				</div>
 				<Footer {...this.props} />	
 			</div>
 		)
