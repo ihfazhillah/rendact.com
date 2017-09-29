@@ -8,6 +8,7 @@ import '../css/main.min.css'
 import '../css/style.css'
 import 'font-awesome/css/font-awesome.min.css'
 import scrollToElement from 'scroll-to-element'
+import {Link} from 'react-router'
 
 const HomeContentWithLatestPost = (props) => (
 <div>
@@ -86,6 +87,8 @@ const Home = React.createClass({
                      <HomeContentWithPage {...this.props}/>
 						     }
 				<Footer {...this.props} />	
+        <div id="titleBar"><a href="#navPanel" className="toggle"></a><span className="title"> <Link to="/"><span>R</span>endact</Link> </span></div>
+        <div id="navPanel"><nav>{this.props.theMenu}</nav></div>
 			</div>
 		)
 	}
