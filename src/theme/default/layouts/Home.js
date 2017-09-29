@@ -7,6 +7,7 @@ import moment from 'moment';
 import '../css/main.min.css'
 import '../css/style.css'
 import 'font-awesome/css/font-awesome.min.css'
+import scrollToElement from 'scroll-to-element'
 
 const HomeContentWithLatestPost = (props) => (
 <div>
@@ -62,8 +63,16 @@ const Home = React.createClass({
     }
   },
 
+  onGotoScrollyClick: function(e){
+    if (e.target && e.target.nodeName === 'A' && e.target.className === "goto-next scrolly"){
+      e.preventDefault()
+      scrollToElement("#items", {duration: 2000, offset:0})
+    }
+  },
+
   componentDidMount: function(){
     document.body.addEventListener('click', this.onContactLinkClick)
+    document.body.addEventListener('click', this.onGotoScrollyClick)
   
   },
 	render: function() {
