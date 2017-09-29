@@ -1,12 +1,10 @@
 import React from 'react'
 import Header from '../includes/Header'
-import Sidebar from '../includes/Sidebar'
 import Footer from '../includes/Footer'
-import _ from 'lodash'
+import HeaderMobile from '../includes/HeaderMobile'
 import moment from 'moment';
 import '../css/main.min.css'
 import '../css/style.css'
-import 'font-awesome/css/font-awesome.min.css'
 import scrollToElement from 'scroll-to-element'
 import {Link} from 'react-router'
 
@@ -46,9 +44,7 @@ const HomeContentWithPage = (props) => (
       </a>
       }
 
-      <div className="single_desc">
         <div dangerouslySetInnerHTML={{__html: props.data.content}} />
-      </div>
     </div>
   </div>
   }
@@ -78,7 +74,7 @@ const Home = React.createClass({
   },
 	render: function() {
 		return (
-			<div id="page-wrapper" className="application">
+			<div id="page-wrapper">
 				<Header {...this.props} />	   
 						     {
                    this.props.theConfig.frontPage === 'latestPost' ? 
@@ -87,8 +83,7 @@ const Home = React.createClass({
                      <HomeContentWithPage {...this.props}/>
 						     }
 				<Footer {...this.props} />	
-        <div id="titleBar"><a href="#navPanel" className="toggle"></a><span className="title"> <Link to="/"><span>R</span>endact</Link> </span></div>
-        <div id="navPanel"><nav>{this.props.theMenu}</nav></div>
+        <HeaderMobile {...this.props}/>
 			</div>
 		)
 	}

@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../includes/Header'
 import Sidebar from '../includes/Sidebar'
 import Footer from '../includes/Footer'
+import HeaderMobile from '../includes/HeaderMobile'
 import Notification from 'react-notification-system';
 import moment from 'moment'
 import CommentForm from '../../../includes/Theme/CommentForm';
@@ -24,6 +25,7 @@ let Single = React.createClass({
               </div>
             </div>
 				<Footer {...this.props} />	
+        <HeaderMobile {...this.props}/>
       </div>
 		      
 			)
