@@ -32,6 +32,7 @@ const HomeContentWithLatestPost = (props) => (
 </div>
 )
 
+
 const HomeContentWithPage = (props) => (
 <div>
   {props.data &&
@@ -52,7 +53,19 @@ const HomeContentWithPage = (props) => (
 </div>             
 )
 
+
 const Home = React.createClass({
+  onContactLinkClick: function(e){
+    if (e.target && e.target.nodeName === 'A' && e.target.className === 'button'){
+      e.preventDefault()
+      this._reactInternalInstance._context.history.push('/page/UG9zdDozNzQ=')
+    }
+  },
+
+  componentDidMount: function(){
+    document.body.addEventListener('click', this.onContactLinkClick)
+  
+  },
 	render: function() {
 		return (
 			<div id="page-wrapper" className="application">
