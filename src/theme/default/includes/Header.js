@@ -15,12 +15,8 @@ const Header = React.createClass({
 		<h1 id="logo">
       <Link to="/"><span>R</span>endact</Link>
 		</h1>
-		<nav id="nav">
-			<ul>
-				<li><a href="/about/">About</a></li>
-				<li><a href="/speed/">Speed</a></li>
-				<li><a href="/contact/">Contact</a></li>
-			</ul>
+    <nav id="nav">
+      {this.props.theMenu}
 		</nav>
 	</header>
 		)
